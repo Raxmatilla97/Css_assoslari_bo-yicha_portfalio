@@ -2,116 +2,195 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-</head> 
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 <body>
-    <!-- Header section -->
-    <header class="main-header">
-        <nav class="main-navigation">
-            <ul class="main-navigation__items">
-                <li class="main-navigation__item">
-                    <a href="#">Asosiy</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#">Men xaqimda</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#">Xizmatlar</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#">Mijozlar</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#">Portfolio</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#">Blog</a>
-                </li>
-                <li class="main-navigation__item">
-                    <a href="#">Sheriklar</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <!-- /Header section -->
 
-    <!-- Main section -->
-    <section id="main-section">
-        <h1>Main section</h1>
-    </section>
-    <!-- /Main section -->
+    <!-- Header Qismi START -->
+    <div class="container">
+        <header class="main-header">
+            <div class="main-header__brand">
+                <a href="/"><img src="/assets/images/logo.png" alt=""></a>
+            </div>
+            <nav class="main-navigation">
+                <ul class="main-navigation__items">
+                    <li class="main-navigation__item active">
+                        <a href="#">Asosiy qism</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Men haqimda</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Xizmatlarim</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Mijozlar</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="main-navigation__item">
+                        <a href="#">Bloglar</a>
+                 </li>
+                 <li class="main-navigation__item">
+                     <a href="#">Sheriklarim</a>
+                 </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <!-- Header Qismi END -->
 
-    <!-- About me section -->
-    <section id="about-me">
-        <h1>Men xaqimda</h1>
-    </section>
-    <!-- /About me section -->
+    <!-- Main Qismi START -->
+    <div class="container">
+        <section id="main-section" class="main-section">
+            <div class="main-section__info">
+                <h4 class="main-section__welcome to-uppercase">Salom hammaga!</h4>
+                <h1 class="main-section__introduction to-uppercase">I am JIm</h1>
+                <h3 class="main-section__position to-uppercase">Senior (Katta) dasturchi & Vlogger</h3>
+                <div class="main-section__social-networks">
+                    <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-vimeo"></i></a>
+                </div>
+                
+                <button class="main-section__action button" type="button">Ishlarimni ko'ring</button>
+            </div>
+            <div class="main_section__image">
+                <img src="/assets/images/home-right.png" alt="my image">
+            </div>
+           
+        </section>
+        <div class="clearfix"></div>
+    </div>
+    <!-- Main Qismi END-->
 
-    <!-- Services section -->
+    <!-- Statistics Qismi START -->
+    <div class="container">
+            <section class="statistics" id="statistics">
+               
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        15k +
+                    </h3>
+                    <p class="statistics__title">
+                        Hursand mijozlar
+                    </p>
+                </div>
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        12k +
+                    </h3>
+                    <p class="statistics__title">
+                        Insonlarga yordam
+                    </p>
+                </div>
+                <div class="statistics__item">
+                    <h3 class="statistics__number">
+                        9/10
+                    </h3>
+                    <p class="statistics__title">
+                        O'rtacha reyting
+                    </p>
+                </div>
+           
+            </section>
+        </div>
+    <!-- Statistics Qismi END -->
+
+
+    <!-- Men Haqimda Qismi START -->
+    <div class="container">
+        <section id="about-me" class="about-me">
+            <div class="about-me__image">
+                <img src="/assets/images/about-us.png" alt="About me">
+            </div>
+            <div class="about-me__info">
+                <h5 class="section-subtitle">
+                    Men haqimda
+                    <span class="blur-line"></span>
+                </h5>
+                <h3 class="section-title">
+                    Senior (katta) dasturchi
+                </h3>
+                <p class="about-me__description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis delectus earum modi voluptas perferendis. Possimus velit nisi quod fuga voluptatem veritatis rem quo quae autem temporibus. Tenetur ipsa ab fugiat!
+                </p>
+                <button type="button" class="button to-uppercase about-me__action">Kirish</button>
+            </div>
+            
+         </section>
+    </div>
+    <div class="clearfix"></div>
+    <!-- Men Haqimda Qismi END -->
+
+    <!-- Mening Xizmatlarim START -->
     <section id="services">
-        <h1>Mening xizmatlarim</h1>
+        <h1>Mening Xizmatlarim</h1>
     </section>
-    <!-- /Services section -->
+    <!-- Mening Xizmatlarim END -->
 
-    <!--  section -->
-    <section id="services">
-        <h1>Mening xizmatlarim</h1>
-    </section>
-    <!-- / section -->
-
-    <!-- Clients section -->
+    <!-- Mizojlarim Qismi START -->
     <section id="clients">
-        <h1>Mening mijozlarim</h1>
+        <h1>Mening Mijozlarim</h1>
     </section>
-    <!-- /Clients section -->
+    <!-- Mizojlarim Qismi END -->
 
-    <!-- Partfolio section -->
-    <section id="partfolio">
-        <h1>Partfolio</h1>
-    </section>
-    <!-- /Partfolio section -->
+    <!-- Portfilio Qismi START -->
+        <section id="portfolio">
+            <h1>Mening portfoliolarim</h1>
+        </section>
+    <!-- Portfilio Qismi END -->    
 
-    <!-- Blog section -->
-    <section id="blog">
-        <h1>Blog</h1>
-    </section>
-    <!-- /Blog section -->
+    <!-- Blog Qismi START -->
+        <section id="blog">
+            <h1>Bloglarim</h1>
+        </section>
+    <!-- Blog Qismi END -->
 
-    <!-- Partners section -->
-    <section id="partners">
-        <h1>Blog</h1>
-    </section>
-    <!-- /Partners section -->
+    <!-- Sheriklarim qismi START -->
+        <section id="partners">
+            <h1>Sheriklarim</h1>
+        </section>
+    <!-- Sheriklarim qismi END -->
+    
+    <!-- Footer Qismi START -->
+        <footer>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Asosiy qism</a>
+                    </li>
+                    <li>
+                        <a href="#">Men haqimda</a>
+                    </li>
+                    <li>
+                        <a href="#">Xizmatlarim</a>
+                    </li>
+                    <li>
+                        <a href="#">Mijozlar</a>
+                    </li>
+                    <li>
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#">Bloglar</a>
+                 </li>
+                 <li>
+                     <a href="#">Sheriklarim</a>
+                 </li>
+                </ul>
+            </nav>
+        </footer>
+    <!-- Footer Qismi END -->
 
-    <!-- Footer section -->
-    <footer id="partners">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#">Asosiy</a>
-                </li>
-                <li>
-                    <a href="#">Men xaqimda</a>
-                </li>
-                <li>
-                    <a href="#">Xizmatlar</a>
-                </li>
-                <li>
-                    <a href="#">Mijozlar</a>
-                </li>
-                <li>
-                    <a href="#">Portfolio</a>
-                </li>
-                <li>
-                    <a href="#">Blog</a>
-                </li>
-                <li>
-                    <a href="#">Sheriklar</a>
-                </li>
-            </ul>
-        </nav>
-    </footer>
-    <!-- /Footer section -->
+
+
 </body>
 </html>

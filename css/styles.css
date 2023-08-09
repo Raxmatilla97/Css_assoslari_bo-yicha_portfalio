@@ -2,6 +2,7 @@
 
 body {
     font-family: sans-serif;
+    margin: 0;
 }
 
 .container {
@@ -35,17 +36,25 @@ body {
 
 .button {
     border: none;
-    background-color: #1c44e4;
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
     color: #ffff;
     font-weight: 500;
     font-size: 14px;
     padding: 20px 40px;
     cursor: pointer;
     border-radius: 5px;
+    background-size: 200% auto;
+
+}
+
+.button:hover {
+    background-position: right center;
 }
 
 .blur-line {
     display: inline-block;
+    position: relative;
+    top: -5px;
     margin-left: 5px;
     width: 80px;
     height: 4px;
@@ -63,6 +72,7 @@ body {
     width: 100%;
     background-color: white;
     box-shadow: 0px 3px 16px 0px rgb(0 0 0 / 10%);
+    z-index: 10;
 }
 
 .main-header__brand {   
@@ -101,6 +111,14 @@ body {
 }
 
 /* Main section styles */
+
+.main-banner {
+    background: url('/Css_assoslari_bo-yicha_portfalio/images/home-banner.png.webp') no-repeat top center;
+    background-position: center;
+    background-size: cover;
+    min-height: 890px;
+
+}
 
 .main-section {
     padding: 100px 30px;
@@ -172,7 +190,9 @@ body {
 .statistics__number {
     font-size: 27px;
     margin-bottom: 5px;
-    color: #1c44e4;
+    background: linear-gradient(90deg, #1345e6 0%, #ed239f 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .statistics__title {
@@ -303,4 +323,186 @@ body {
 
 .client-item__rate .disabled {
     color: #aeb9be;
+}
+
+/* Portfolio saection styles */
+
+.portfolio {
+    padding: 100px;
+}
+
+.portfolio-filters {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 50px;
+
+}
+
+.portfolio-filters li {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.portfolio-filters li:hover, 
+.portfolio-filters li.active {
+    color: #1345e6;
+}
+
+.portfolio-items {
+    margin-top: 50px;
+    position: relative;
+}
+
+.portfolio-item {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.portfolio-item-1 {
+    padding-left: 0;
+}
+
+.portfolio-item-2 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.portfolio-item-3 {
+    position: absolute;
+    right: 0;
+    top: 270px;
+}
+
+.portfolio-item__image {
+    width: 100%;
+}
+
+.portfolio-item__overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(19, 63, 230, 0.9);
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item__info {
+    position: absolute;
+    bottom: 44px;
+    left: 80px;
+    color: white;
+    visibility: hidden;
+    z-index: 1;
+}
+
+.portfolio-item__info a {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.portfolio-item:hover .portfolio-item__overlay {
+    visibility: visible;
+    top: 20px;
+    left: 20px;
+}
+
+.portfolio-item:hover .portfolio-item__info {
+    visibility: visible;
+    bottom: 24px;
+    left: 60px;
+}
+
+/* Blog section styles */
+
+.blog {
+    padding-top: 100px;
+}
+
+.blog-items {
+    margin-top: 50px;
+}
+
+.blog-item {
+    display: inline-block;
+    width: 30%;
+    margin-right: 3%;
+    box-sizing: border-box;
+}
+
+.blog-item:hover {
+    box-shadow: 0px 10px 20px rgb(5 54 77 / 10%);
+}
+
+.blog-item:hover .blog-item__info {
+    background-color: white;
+}
+
+.blog-item__image img {
+    width: 100%;
+}
+
+.blog-item__info {
+    background-color: #f8faff;
+    padding: 30px;
+    color: #797979;
+}
+
+.blog-item__info span {
+    font-size: 14px;
+    margin-right: 30px;
+    font-weight: lighter;
+}
+
+.blog-item__info i {   
+    margin-right: 5px;
+}
+
+.blog-item__title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #05364D;
+    font-weight: 700;
+}
+
+.blog-item__description {
+    line-height: 27px;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.blog-item__learn-more {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #05364D;
+    text-decoration: none;
+}
+
+.blog-item__learn-more:hover {
+    color: #ed239f;
+}
+
+/* Partners section styles */
+
+.partners {
+    padding-top: 100px;
+}
+
+.partner {
+    display: inline-block;
+    padding: 0 30px;
 }

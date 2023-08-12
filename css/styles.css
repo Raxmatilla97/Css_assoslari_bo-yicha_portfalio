@@ -131,7 +131,7 @@
     margin-right: 3%;
     text-align: center;
     box-sizing: border-box;
-
+    transition: all 0.5s ease 0s;
 }
 
 .service-card__title {
@@ -283,9 +283,10 @@
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgb(19, 63, 230, 0.9);
-    visibility: hidden;
+    /* background-color: rgb(19, 63, 230, 0.9); */
+    /* visibility: hidden; */
     z-index: 1;
+    transition: all 0.4s ease 0s;
 }
 
 .portfolio-item__info {
@@ -295,6 +296,8 @@
     color: white;
     visibility: hidden;
     z-index: 1;
+    transition: all 0.4s ease 0s;
+    opacity: 0;
 }
 
 .portfolio-item__info a {
@@ -307,12 +310,15 @@
     visibility: visible;
     top: 20px;
     left: 20px;
+    background-color: rgb(19, 63, 230, 0.9);
+    
 }
 
 .portfolio-item:hover .portfolio-item__info {
     visibility: visible;
     bottom: 24px;
     left: 60px;
+    opacity: 1;
 }
 
 /* Blog section styles */
@@ -330,6 +336,21 @@
     width: 30%;
     margin-right: 3%;
     box-sizing: border-box;
+    overflow: hidden;
+}
+
+.blog-item__image {
+    overflow: hidden;
+}
+
+.blog-item__image img {
+    width: 100%;
+    vertical-align: middle;
+    transition: all 0.4s ease 0s;
+}
+
+.blog-item:hover .blog-item__image img {
+    transform: scale(1.1);
 }
 
 .blog-item:hover {
@@ -396,7 +417,82 @@
     display: inline-block;
     padding: 0 1.87rem;
 }
+@media only screen and (max-width: 991px) {
+    /* Main section */
+    .main-section__image {
+        display: none;
+    }
 
+    .main-section > div {
+        width: 100%;
+    }
+
+    /* Statistics  */
+
+    .statistics {
+        padding-top: 1rem;
+        text-align: center;
+    }
+
+     /* About me section */
+     .about-me {
+        padding: 1.5rem 0;
+    }
+
+    .about-me img {
+        display: none;
+    }
+
+    .about-me > div {
+        width: 100%;
+    }
+
+    /* Services  */
+    .services {
+        padding: 1.5rem 0;
+    }
+
+    .service-card {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+     /* Clients section */
+     .clients {
+        padding: 1.5rem 0;
+    }
+
+    .client-item > div {
+        width: 100%;
+        float: none;
+    }
+
+    /* Blog section */
+    .blog {
+        padding: 1.5rem 0;
+    }
+    
+    .blog-item {
+        width: 45%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    /* Partners */
+    .partners {
+        padding: 1.5rem 0;
+    }
+
+    .partner {
+        display: block;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+
+
+}
 
 @media only screen and (max-width: 767px) {
     
@@ -405,16 +501,8 @@
         background: none;
         min-height: auto;
     }
-    .main-section__image {
-        display: none;
-    }
-
     .main-section__action {
         display: none;
-    }
-
-    .main-section > div {
-        width: 100%;
     }
 
     .main-section__introduction {
@@ -429,19 +517,7 @@
         box-sizing: border-box;
     }
 
-    /* About me section */
-    .about-me {
-        padding: 1.5rem 0;
-    }
-
-    .about-me img {
-        display: none;
-    }
-
-    .about-me > div {
-        width: 100%;
-    }
-
+   
     /* Services section */
     .services {
         padding: 1.5rem 0;
@@ -452,17 +528,7 @@
         margin-right: 0;
         margin-bottom: 20px;
     }
-
-    /* Clients section */
-    .clients {
-        padding: 1.5rem 0;
-    }
-
-    .client-item > div {
-        width: 100%;
-        float: none;
-    }
-
+   
     /* My partfolios */
     .portfolio {
         padding: 1.5rem 0;
@@ -486,27 +552,14 @@
     }
     
     /* Blog section */
-    .blog {
-        padding: 1.5rem 0;
-    }
-    
+     
     .blog-item {
         width: 100%;
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-    /* Partners */
-    .partners {
-        padding: 1.5rem 0;
-    }
-
-    .partner {
-        display: block;
-        padding: 0;
-        text-align: center;
-        margin-bottom: 10px;
-    }
+    
 
   
 }
